@@ -3,7 +3,7 @@
   "description": "A collection of PHP Functions that I've found useful or needed in separate projects",
   "authors": [
     {
-      "name": "Joey Overby",
+      "name": "Joey Overby"
     }
   ],
   "autoload": {
@@ -12,7 +12,6 @@
     }
   },
   "repositories" : [
-
   ],
   "require" : {
   },
@@ -21,6 +20,5 @@
   "config" : {
     "discard-changes": true
   }
-
 }
 
