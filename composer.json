@@ -1,0 +1,26 @@
+{
+  "name": "PHP Helper Functions",
+  "description": "A collection of PHP Functions that I've found useful or needed in separate projects",
+  "authors": [
+    {
+      "name": "Joey Overby",
+    }
+  ],
+  "autoload": {
+    "psr-4" : {
+      "JoeyOverby\\PHPHelpers\\" : ["src"]
+    }
+  },
+  "repositories" : [
+
+  ],
+  "require" : {
+  },
+  "require-dev": {
+  },
+  "config" : {
+    "discard-changes": true
+  }
+
+}
+
