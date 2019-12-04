@@ -37,9 +37,11 @@ class Grid {
      *
      * @throws PHPHelpersException
      */
-    public function __construct(int $width, int $height) {
-        $this->setWidth($width);
-        $this->setHeight($height);
+    public function __construct(int $width = null, int $height = null) {
+        if($height !== null && $width !== null){
+            $this->setWidth($width);
+            $this->setHeight($height);
+        }
     }
     
     /**
