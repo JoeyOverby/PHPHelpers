@@ -99,14 +99,19 @@ class Grid {
             }
         }
         
-        if($xVal < 0 || $xVal >= $this->getWidth()){
-            throw new InvalidParameterException("xVal must be between 0-" . ($this->getWidth()-1) . ", Given: " .
-                                                $xVal);
+        
+        if($this->getWidth() !== null){
+            if($xVal < 0 || $xVal >= $this->getWidth()){
+                throw new InvalidParameterException("xVal must be between 0-" . ($this->getWidth()-1) . ", Given: " .
+                                                    $xVal);
+            }
         }
     
-        if($yVal < 0 || $yVal >= $this->getHeight()){
-            throw new InvalidParameterException("yVal must be between 0-" . ($this->getHeight()-1) . ", Given: " .
-                                                $xVal);
+        if($this->getHeight() !== null){
+            if($yVal < 0 || $yVal >= $this->getHeight()){
+                throw new InvalidParameterException("yVal must be between 0-" . ($this->getHeight()-1) . ", Given: " .
+                                                    $xVal);
+            }
         }
         
         
