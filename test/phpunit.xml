@@ -1,0 +1,39 @@
+<phpunit
+        convertErrorsToExceptions="false"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        forceCoversAnnotation="false"
+        processIsolation="false"
+        stopOnError="false"
+        stopOnFailure="false"
+        stopOnIncomplete="false"
+        stopOnSkipped="false"
+        stopOnRisky="false"
+        timeoutForSmallTests="1"
+        timeoutForMediumTests="10"
+        timeoutForLargeTests="60"
+        verbose="true"
+        failOnWarning="true"
+        failOnRisky="true">
+    <filter>
+        <whitelist
+                addUncoveredFilesFromWhitelist="true"
+                processUncoveredFilesFromWhitelist="false">
+            <directory suffix=".php">../src</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="./codeCoverageResults/html/"/>
+        <log type="coverage-clover" target="./codeCoverageResults/coverage.xml"/>
+    </logging>
+    <groups>
+        <exclude>
+            <group>extended</group>
+        </exclude>
+    </groups>
+    <testsuites>
+        <testsuite name="all_tests">
+            <directory suffix="Test.php">./</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

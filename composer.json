@@ -8,7 +8,8 @@
   ],
   "autoload": {
     "psr-4" : {
-      "JoeyOverby\\PHPHelpers\\" : ["src"]
+      "JoeyOverby\\PHPHelpers\\" : ["src"],
+      "JoeyOverby\\PHPHelpers\\Test\\" : ["test"]
     }
   },
   "repositories" : [
@@ -16,6 +17,8 @@
   "require" : {
   },
   "require-dev": {
+    "phpunit/phpunit": "~8",
+    "fzaninotto/Faker": "~1"
   },
   "config" : {
     "discard-changes": true
